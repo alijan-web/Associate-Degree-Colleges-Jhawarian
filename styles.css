@@ -6,4 +6,13 @@
 body {
     width: 100%;
     height: 100vh;
+    color: blue;
 }
+
+/* Navbar  */
+.navbar.bg-initial {
+    background-color: transparent;
+}
+.navbar.bg-scrolled {
+      background-color: white;
+  }
