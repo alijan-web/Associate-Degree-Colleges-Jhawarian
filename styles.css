@@ -18,6 +18,7 @@ body {
   .container-fluid img {
     width: 100px;
   }
+  
 /* About Us */
 .contante {
   display: flex;
@@ -153,5 +154,91 @@ body {
 
   .text {
     font-size: 14px;
+  }
+}
+
+
+/* Vision */
+/* VISION */
+.vision-contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.vision-box {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  max-width: 1200px;
+  width: 100%;
+}
+
+.vision-box1, .vision-box2 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.vision-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1A4D2E;
+  text-align: left;
+  /* width: 600px; */
+  color: white;
+}
+
+.vision-box1 h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.vision-box1 h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.vision-box1 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.vision-box1 h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.vision-box2 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .vision-box1, .vision-box2 {
+    flex: 1 1 100%;
+  }
+
+  .vision-box1 h2 {
+    font-size: 1.75em;
+  }
+
+  .vision-box1 h1 {
+    font-size: 2.5em;
+  }
+
+  .vision-box1 p {
+    font-size: 1em;
+  }
+
+  .vision-box1 h3 {
+    font-size: 1.25em;
   }
 }
