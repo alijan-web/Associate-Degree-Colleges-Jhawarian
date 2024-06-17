@@ -9,6 +9,8 @@ body {
 }
 
 /* Navbar  */
+
+
 .navbar.bg-initial {
     background-color: transparent;
 }
@@ -18,7 +20,83 @@ body {
   .container-fluid img {
     width: 100px;
   }
+  .offcanvas-body {
+    background-color: navy;
+  }
+  .btn-close {
+    background-color: rgb(252, 252, 252);
+    color: white;
+  }
+  .offcanvas-header {
+    background-color: navy;
+  }
+/* .nav-item a {
+    color: white;
+    font-weight: 800;
+    margin: 0 40px ;
+  }
+  .nav-item a:hover {
+    color: red;
+  } */
+.dropdown-menu {
+  background-color: navy;
+}
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 3px;
+  --text-stroke-color: rgb(255, 255, 255);
+  --animation-color: red;
+  --fs-size: 1em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: sans-serif;
+  position: relative;
+  /* text-transform: uppercase; */
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
   
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.btn-outline-success {
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+.btn-outline-success:hover{
+  background-color: rgb(230, 6, 6);
+}
+
 /* About Us */
 .contante {
   display: flex;
@@ -365,4 +443,103 @@ margin-top: 20px;
 }
 .image-box img {
   width: 100%;
+}
+
+
+
+.studant-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: linear-gradient(black, navy);
+  padding: 50px;
+}
+.studant-box {
+  flex: 1 1 30%;
+  /* margin: 10px; */
+  text-align: center;
+}
+.studant-box h1 {
+  font-size: 50px;
+  color: orangered;
+  font-weight: 700;
+}
+.studant-box h4 {
+  color: white;
+}
+@media (max-width: 768px) {
+  .studant-box {
+      flex-direction: column;
+      padding: 20px;
+  }
+  /* .studant-box {
+      margin: 10px 0;
+  } */
+}
+
+
+.registration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* padding: 20px; */
+ color: white;
+  background-image: linear-gradient(navy, black);
+}
+.box-registration {
+  flex: 1;
+  min-width: 280px;
+ /* margin: 10px;  */
+  padding: 20px;
+  background-color: navy;
+}
+.box-registration h3 {
+  margin-top: 0;
+}
+.box-registration input, .box-registration textarea, .box-registration button {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.box-registration textarea {
+  height: 100px;
+  resize: none;
+}
+.box-registration button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.box-registration button:hover {
+  background-color: rgb(236, 9, 9);
+}
+@media (max-width: 600px) {
+  .box-registration {
+      margin: 0 auto;
+  }
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color:navy;
+}
+.social-media-icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+.social-media-icons a:hover {
+  color: #f8f9fa;
+}
+.footer {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  background-color: navy;
 }
