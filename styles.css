@@ -444,14 +444,11 @@ margin-top: 20px;
 .image-box img {
   width: 100%;
 }
-
-
-
 .studant-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: linear-gradient(black, navy);
+  background-color: navy;
   padding: 50px;
 }
 .studant-box {
@@ -542,4 +539,52 @@ margin-top: 20px;
   text-align: center;
   padding: 10px 0;
   background-color: navy;
+}
+
+
+
+/* about */
+.container-about {
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+.heading-about {
+  font-size: 44px;
+  margin-bottom: 10px;
+  color: red;
+  font-weight: 500;
+}
+.link-about {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+.paragraphs-about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.paragraph-box-about {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white;
+}
+
+.stu {
+  padding: 20px;
+  color: white;
+}
+.stu h1 {
+  color: red;
+  font-size: 88px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 700;
+}
+.stu h3 {
+  margin-top: -20px;
 }
